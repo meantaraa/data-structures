@@ -2,19 +2,13 @@
 
 // public class GCDandLCM {
 
-//     public static int findGCD(int a, int b){
-
-//         int gcd=1;
-
-//         for(int i=1; i<Math.min(a,b); i++) {
-
-//             if(a%i == 0 && b%i == 0 ){
-
+//     public static int findGCD(int a, int b) {
+//         int gcd = 1;
+//         for (int i = 1; i < Math.min(a, b); i++) {
+//             if (a % i == 0 && b % i == 0) {
 //                 gcd = i;
-
 //             }
 //         }
-
 //         return gcd;
 //     }
 
@@ -24,28 +18,19 @@
 //     }
 
 //     public static void main(String[] args) {
-
 //         Scanner sc = new Scanner(System.in);
-        
 //         System.out.println("Enter the first number: ");
 //         int n1 = sc.nextInt();
-
 //         System.out.println("Enter the second number: ");
 //         int n2 = sc.nextInt();
-
 //         System.out.println("The GCD is: " + findGCD(n1, n2));
-
 //         System.out.println("The LCM is: " + findLCM(n1, n2));
-
-
 //         sc.close();
 //     }
-
 // }
 
 //Time Complexity: O(min(N1, N2)) 
 //Space Complexity: O(1)
-
 import java.util.Scanner;
 
 public class GCDandLCM {
@@ -68,16 +53,12 @@ public class GCDandLCM {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter the first number: ");
         int n1 = sc.nextInt();
-
         System.out.println("Enter the second number: ");
         int n2 = sc.nextInt();
-
         System.out.println("The GCD is: " + findGCD(n1, n2));
         System.out.println("The LCM is: " + findLCM(n1, n2));
-
         sc.close();
     }
 }

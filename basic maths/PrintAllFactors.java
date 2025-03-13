@@ -1,7 +1,5 @@
 // import java.util.*;
-
 // public class PrintAllFactors {
-
 //     public static void printDivisors(int n) {
 //         for (int i = 1; i <= n; i++) {
 //             if (n % i == 0) {
@@ -9,17 +7,12 @@
 //             }
 //         }
 //     }
-
 //     public static void main(String[] args) {
-
 //         Scanner scanner = new Scanner(System.in);
 //         System.out.print("Enter a number: ");
-
 //         int number = scanner.nextInt();
-
 //         System.out.println("The divisors of " + number + " are: ");
 //         printDivisors(number);
-
 //         scanner.close();
 //     }
 // }
@@ -30,7 +23,6 @@ Auxiliary Space : O(1) */
 import java.util.Scanner;
 
 public class PrintAllFactors {
-
     public static void printDivisors(int n) {
         for (int i = 1; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
@@ -46,12 +38,9 @@ public class PrintAllFactors {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-
         int number = scanner.nextInt();
-
         System.out.println("The divisors of " + number + " are: ");
         printDivisors(number);
-
         scanner.close();
     }
 }
